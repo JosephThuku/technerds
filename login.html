@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+        body {
+            padding: 0;
+            margin: 0;
+            background: #c8c8c8;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .login {
+            width: 400px;
+            margin: 16px auto;
+            font-size: 16px;
+        }
+
+        .login h1 {
+            color: #333;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .login input[type="text"],
+        .login input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        .login input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #ffcc00;
+            border: 0;
+            cursor: pointer;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .login input[type="submit"]:hover {
+            background: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Username" required="required" />
+            <input type="password" name="password" placeholder="Password" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+        </form>
+    </div>
+</html>
